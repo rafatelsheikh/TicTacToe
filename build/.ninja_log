@@ -1,8 +1,0 @@
-# ninja log v6
-2	2188	7713710964156783	CMakeFiles/TicTacToe.dir/src/exceptions.cpp.obj	7326031b0683e7b7
-25	456	7713722502010246	CMakeFiles/TicTacToe.dir/src/AI.cpp.obj	2b9ef64bec2b3c6f
-1659	2190	7713710964371709	CMakeFiles/TicTacToe.dir/src/main.cpp.obj	b6f9a24ec16e0245
-1649	2198	7713710964265360	CMakeFiles/TicTacToe.dir/src/Human.cpp.obj	a018aca208eef7c3
-1645	2256	7713710964237533	CMakeFiles/TicTacToe.dir/src/Model.cpp.obj	aa566a641e7eb580
-23	369	7713712905034380	CMakeFiles/TicTacToe.dir/src/Controller.cpp.obj	6c7a887983fe95f9
-456	569	7713722506389657	bin/TicTacToe.exe	1503b73858b46459
