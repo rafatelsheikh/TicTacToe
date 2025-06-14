@@ -1,0 +1,38 @@
+[
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\exceptions.cpp.obj -c E:\\TicTacToe\\src\\exceptions.cpp",
+  "file": "E:\\TicTacToe\\src\\exceptions.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\exceptions.cpp.obj"
+},
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\Model.cpp.obj -c E:\\TicTacToe\\src\\Model.cpp",
+  "file": "E:\\TicTacToe\\src\\Model.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\Model.cpp.obj"
+},
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\Human.cpp.obj -c E:\\TicTacToe\\src\\Human.cpp",
+  "file": "E:\\TicTacToe\\src\\Human.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\Human.cpp.obj"
+},
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\AI.cpp.obj -c E:\\TicTacToe\\src\\AI.cpp",
+  "file": "E:\\TicTacToe\\src\\AI.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\AI.cpp.obj"
+},
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\Controller.cpp.obj -c E:\\TicTacToe\\src\\Controller.cpp",
+  "file": "E:\\TicTacToe\\src\\Controller.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\Controller.cpp.obj"
+},
+{
+  "directory": "E:/TicTacToe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -Wall -Wextra -pedantic -o CMakeFiles\\TicTacToe.dir\\src\\main.cpp.obj -c E:\\TicTacToe\\src\\main.cpp",
+  "file": "E:\\TicTacToe\\src\\main.cpp",
+  "output": "CMakeFiles\\TicTacToe.dir\\src\\main.cpp.obj"
+}
+]
