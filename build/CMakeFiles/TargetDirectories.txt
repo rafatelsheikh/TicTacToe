@@ -1,3 +1,0 @@
-E:/TicTacToe/build/CMakeFiles/TicTacToe.dir
-E:/TicTacToe/build/CMakeFiles/edit_cache.dir
-E:/TicTacToe/build/CMakeFiles/rebuild_cache.dir
