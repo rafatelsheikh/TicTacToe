@@ -42,15 +42,19 @@ struct Move {
 class PlayerType {
 public:
     // virtual function to make sure every derived class can play properly
-    virtual void play(Player player, Model& game) = 0;
+    virtual void play(Player player, Model& game, int row, int col) = 0;
     virtual ~PlayerType() = default;
+    virtual bool isHuman() = 0;
 };
 
 // Human is a PlayerType that indicates that this player is a human
 class Human : public PlayerType {
 public:
     // play as a human
-    void play(Player player, Model& game);
+    void play(Player player, Model& game, int row, int col);
+
+    // check if the player is human (return true because we are in Human (Daahhh!))
+    bool isHuman();
 };
 
 // AI is a playerType that indictates that this player is AI
@@ -78,5 +82,8 @@ public:
     AI(Difficulty diff);
 
     // play as AI
-    void play(Player player, Model& game);
+    void play(Player player, Model& game, int row, int col);
+
+    // check if the player is human (return false because we are in AI (Daahhh!))
+    bool isHuman();
 };

@@ -13,6 +13,10 @@ Controller::~Controller() {
 }
 
 void Controller::go(Model newGame) {
+    // row and col that the player choose to play in every game
+    int row, col;
+
+    // the actual game loop
     while (!newGame.isTheGameOver()) {
         // display the grid
         array<array<Cell, 3>, 3> grid = newGame.getGrid();
@@ -43,10 +47,18 @@ void Controller::go(Model newGame) {
         try {
             switch (current) {
                 case X:
-                    XType->play(current, newGame);
+                    if (XType->isHuman()) {
+                        cout << "Player X's turn." << endl <<"Enter the row and column: ";
+                        cin >> row >> col;
+                    }
+                    XType->play(current, newGame, row, col);
                     break;
                 case O:
-                    OType->play(current, newGame);
+                    if (OType->isHuman()) {
+                        cout << "Player O's turn." << endl <<"Enter the row and column: ";
+                        cin >> row >> col;
+                    }
+                    OType->play(current, newGame, row, col);
                     break;
                 default:
                     break;

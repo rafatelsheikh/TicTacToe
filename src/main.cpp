@@ -9,7 +9,7 @@ int main() {
     
     Model game;
 
-    Controller gameController(new Human(), new AI(Normal));
+    Controller gameController(new Human(), new AI(Hard));
     
     gameController.go(game);
 }
