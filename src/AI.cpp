@@ -182,7 +182,7 @@ AI::AI(Difficulty diff) {
     difficulty = diff;
 }
 
-void AI::play(Player player, Model& game) {
+void AI::play(Player player, Model& game, int row, int col) {
     // identify how to play for every difficulty
     switch (difficulty) {
         case Easy:
@@ -198,4 +198,8 @@ void AI::play(Player player, Model& game) {
             playNormalMove(game, game.whoIsNext());
             break;
     }
+}
+
+bool AI::isHuman() {
+    return false;
 }

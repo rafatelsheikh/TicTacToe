@@ -3,12 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void Human::play(Player player, Model& game) {
-    int row, col;
-
-    cout << "Player " << ((player == X) ? "X" : "O") << "'s turn." << endl <<"Enter the row and column: ";
-    cin >> row >> col;
-
+void Human::play(Player player, Model& game, int row, int col) {
     game.play(row, col);
     game.updateStatus();
+}
+
+bool Human::isHuman() {
+        return true;
 }
