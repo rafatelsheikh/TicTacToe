@@ -10,15 +10,12 @@ set(LIB_SOURCES
 add_library(tictactoe_lib ${LIB_SOURCES})
 
 # Add include directories (your local + SQLiteCpp)
-target_include_directories(tictactoe_lib
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
-    PRIVATE ${SQLiteCpp_SOURCE_DIR}/include
-)
+target_include_directories(tictactoe_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-# Link against SQLiteCpp
+
 target_link_libraries(tictactoe_lib PRIVATE SQLiteCpp)
 
-# Main executable
+
 add_executable(TicTacToe main.cpp)
 target_link_libraries(TicTacToe PRIVATE tictactoe_lib)
 
