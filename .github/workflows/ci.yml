@@ -2,9 +2,9 @@ name: Build and Test TicTacToe
 
 on:
   push:
-    branches: [ add-unit-tests ]
+    branches: [ master ]
   pull_request:
-    branches: [ add-unit-tests ]
+    branches: [ master ]
 
 jobs:
   build-and-test:
