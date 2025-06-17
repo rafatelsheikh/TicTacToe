@@ -1,0 +1,27 @@
+name: Build and Test TicTacToe
+
+on:
+  push:
+    branches: [ add-unit-tests ]
+  pull_request:
+    branches: [ add-unit-tests ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y cmake g++ ninja-build
+
+    - name: Configure CMake
+      run: cmake -S . -B build -G Ninja
+
+    - name: Build project
+      run: cmake --build build
+
+    - name: Run tests
+      run: ctest --test-dir build --output-on-failure
