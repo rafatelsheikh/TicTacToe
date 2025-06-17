@@ -1,4 +1,5 @@
 #include "Controller.h"
+#include "database.h"
 #include <iostream>
 #include <cstdlib> 
 #include <ctime>
