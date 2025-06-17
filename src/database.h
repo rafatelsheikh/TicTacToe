@@ -5,8 +5,6 @@
 #include <vector>
 #include <utility>
 #include <SQLiteCpp/SQLiteCpp.h>
-#include <openssl/sha.h>
-#include <openssl/rand.h>
 #include "PlayerType.h"
 
 // Struct to represent a game history

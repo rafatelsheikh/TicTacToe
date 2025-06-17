@@ -3,6 +3,7 @@
 #include <sstream>
 #include "database.h"
 #include "PlayerType.h"
+#include "picosha2.h"
 
 
 using namespace std;
