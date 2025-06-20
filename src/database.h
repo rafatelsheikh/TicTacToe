@@ -1,12 +1,12 @@
-
+#ifndef GAME_DATABASE_H
 #define GAME_DATABASE_H
 
+#include <cstdint>
 #include <string>
 #include <vector>
 #include <utility>
 #include <SQLiteCpp/SQLiteCpp.h>
 #include "PlayerType.h"
-
 // Struct to represent a game history
 struct GameHistoryEntry {
     int game_id;
@@ -43,3 +43,5 @@ private:
     std::string serializeMoves(const std::vector<Move>& moves);
     std::vector<Move> deserializeMoves(const std::string& moves_str);
 };
+
+#endif
