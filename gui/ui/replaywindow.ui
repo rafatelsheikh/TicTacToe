@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReplayWindow</class>
+ <widget class="QWidget" name="ReplayWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	border-image: url(:/img/img/dark_blue.jpg) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Replaying moves...</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="cell11">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_5.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="cell02">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_3.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="cell21">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_8.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="playAllButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/HomePage.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Play Full Game</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="cell20">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_7.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="cell10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_4.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="cell00">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_1.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="cell12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_6.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="nextMoveButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/HomePage.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Play Next Move</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="cell01">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_2.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="cell22">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/piece_9.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="closeButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	
+    border-image: url(:/img/img/HomePage.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
