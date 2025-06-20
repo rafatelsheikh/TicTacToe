@@ -1,7 +1,6 @@
 #ifndef GAME_DATABASE_H
 #define GAME_DATABASE_H
 
-#include <cstdint>
 #include <string>
 #include <vector>
 #include <utility>
