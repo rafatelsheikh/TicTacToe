@@ -57,7 +57,12 @@ This project is a version of the classic TicTacToe game developed using C++ with
 
 ---
 
-🎮 Gameplay flow
+##📄 List of Documents
+- Software Requirements Specification (SRS)
+- Software Design Specification (SDS)
+- Testing Document
+- Performance Measurement and Optimization
+
 
 
 ---
@@ -79,6 +84,8 @@ This project is a version of the classic TicTacToe game developed using C++ with
 
 - **Tree:** for AI decision-making via Minimax algorithm in hard level.
 - **Struct:** for saving the moves on the grid.
+- **Pairs:** to save the salt and hash password in the database.
+- **Vectors:** used in the database and it behaves as a queue to save moves of a certain game.
 - **Classes:** to determine the play mode human vs human or human vs AI.
 - **Enums:** for representing the state of each cell or the game status—for example, PLAYER_X and PLAYER_O instead of numeric values to improves code readability and reduces logic errors. 
 
