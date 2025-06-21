@@ -2,7 +2,7 @@
 
 ## 🧠 Overview
 
-This project is a version of the classic TicTacToe game developed using C++ with user-friendly GUI, AI opponent with levels, and secure user authentication system. It supports both player vs player and player vs AI modes, with persistent game history and performance tracking.
+This project is a version of the classic TicTacToe game developed using C++ with user-friendly GUI, AI opponent with levels, and secure user authentication system. It supports both player vs player and player vs AI modes, with persistent game history and performance tracking. the files above is divided into src files that contains the game logic and the gui contains GUI and database implementation. The zip file contain the game. You can download it and decompress the file and try to play the game.
 
 
 ---
