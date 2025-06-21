@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/easy.jpg</file>
+        <file>img/easy_2.png</file>
+        <file>img/gameplay_Background.jpg</file>
+        <file>img/Hard_1.jpg</file>
+        <file>img/Hard_2.jpg</file>
+        <file>img/HomePage.png</file>
+        <file>img/medium.jpg</file>
+        <file>img/gray.jpg</file>
+        <file>img/hard.jpg</file>
+        <file>img/piece_1.png</file>
+        <file>img/piece_2.png</file>
+        <file>img/piece_3.png</file>
+        <file>img/piece_4.png</file>
+        <file>img/piece_5.png</file>
+        <file>img/piece_6.png</file>
+        <file>img/piece_7.png</file>
+        <file>img/piece_8.png</file>
+        <file>img/piece_9.png</file>
+        <file>img/dark_blue.jpg</file>
+        <file>img/exit.jpeg</file>
+        <file>img/history.png</file>
+        <file>img/logout.jpg</file>
+        <file>img/mainmenu.png</file>
+        <file>img/restart.png</file>
+    </qresource>
+</RCC>

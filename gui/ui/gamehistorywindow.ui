@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameHistoryWindow</class>
+ <widget class="QWidget" name="GameHistoryWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>273</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	border-image: url(:/img/img/HomePage.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+QLineEdit {
+    background-color: #444444;
+    color: white;
+    border: 1px solid #888888;
+    padding: 4px;
+}
+
+QLabel {
+    color: white;
+}
+
+QPushButton {
+    background-color: #555555;
+    color: white;
+    border: 1px solid #888888;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout_2">
+   <item row="0" column="1">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="1">
+      <widget class="QTableWidget" name="historyTable">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+	border-image: url(:/img/img/HomePage.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+QLineEdit {
+    border-image: url(:/img/img/gray.jpg) 0 0 0 0 stretch stretch;
+    color: white;
+    border: 1px solid #888888;
+    padding: 4px;
+}
+
+QLabel {
+    border-image: url(:/img/img/gray.jpg) 0 0 0 0 stretch stretch;
+    color: white;
+}
+
+QPushButton {
+    background-color: #555555;
+    color: white;
+    border: 1px solid #888888;
+    padding: 6px;
+    border-radius: 4px;
+    border-image: url(:/img/img/gray.jpg) 0 0 0 0 stretch stretch;
+
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QTableWidget {
+    color: white;
+    background-color: #222222;
+    gridline-color: #666666;
+    selection-background-color: #444444;
+    selection-color: white;
+    border: 1px solid #888888;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color: #333333;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid #555555;
+}
+</string>
+       </property>
+       <property name="columnCount">
+        <number>4</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>Opponent</string>
+        </property>
+        <property name="background">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Result</string>
+        </property>
+        <property name="background">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Date</string>
+        </property>
+        <property name="background">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Replay</string>
+        </property>
+        <property name="background">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="closeButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+	border-image: rgb(177, 177, 177);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+QPushButton {
+    background-color: #555555;
+    color: white;
+    border: 2px solid white;     /* white border */
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #666666;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
