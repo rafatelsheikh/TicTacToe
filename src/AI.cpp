@@ -203,3 +203,7 @@ void AI::play(Player player, Model& game, int row, int col) {
 bool AI::isHuman() {
     return false;
 }
+
+Difficulty AI::getDifficulty() {
+    return difficulty;
+}

@@ -86,4 +86,7 @@ public:
 
     // check if the player is human (return false because we are in AI (Daahhh!))
     bool isHuman();
+
+    // return the ai model difficulty
+    Difficulty getDifficulty();
 };
